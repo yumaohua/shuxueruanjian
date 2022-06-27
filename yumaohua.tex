@@ -1,0 +1,74 @@
+% !TeX spellcheck = en_US
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title{The First Homework:The Proof of The Inevitability of The Similar Diagonalization of Real Symmetric Matrices in Real Number Field}
+
+
+\author{Yu Maohua\\Information and Computing Sciences\\3210104374}
+
+\begin{document}
+
+\maketitle
+
+This is a question from the field of algebra.
+
+\section{Question description}
+
+The description of the question is as follows:please prove a real symmetric matrix can be similarly diagonalized in real number field. 
+\section{Proof}
+lemma 1:Eigenvalues of real symmetric matrices are all real numbers.
+
+proof of lemma 1 Let A be an $n$$\times n $matrix in real number field, $A^T=A$, $\lambda$ is an eigenvalue of $A$, then we have
+
+\begin{equation}
+\bar{\xi}^TA\xi = \lambda \bar{\xi}^T \xi =\lambda \left|\xi\right|^2	
+\label{1}
+\end{equation}
+
+\begin{equation}
+\bar{\xi}^TA\xi=(\bar{A\xi})^T\xi=(\bar{\lambda\xi})^T\xi=\bar{\lambda}\left|\xi\right|^2
+\label{2}
+\end{equation}
+with equasion \ref{1} and \ref{2} we have ($\lambda$-$\bar{\lambda}$)$\left|\xi\right|^2$=0,\\
+so $\lambda$ is a real number, and eigenvectors of A are in $R^n$.
+\\
+\\
+lemma 2:Eigenvectors belonging to different eigenvalues of a real symmetric matrix are orthogonal.
+
+proof of lemma 2 Let $\lambda_1$ and $\lambda_2$ be different eigenvalues of real symmetric matrix A, and A$\xi_1$=$\lambda_1$$\xi_1$,A$\xi_2$=$\lambda_2$$\xi_2$\\
+so~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$\lambda_1$$(\xi_1,\xi_2)$=$\lambda_2$$(\xi_1,\xi_2)$.\\
+Because $\lambda_1$ is different from $\lambda_2$, ($\xi_1$,$\xi_2$)=0.\\
+\section{proof of theorem}
+We will use induction.
+Let A be an $n$$\times$$n$matrix in real number field, we just need to prove there is a unit orthogonal matrix U makes $U^TAU$ a diagonal matrix.\\
+For n=1, U={1};\\
+for n=k-1, we assume $U_0$ makes $U_0^TAU_0$ a diagonal matrix.\\
+For n=k,with lemma 1,we know that A only has real eigenvalues $\lambda_1$ to $\lambda_n$. The eigenvector of $\lambda_1$ is $\xi_1$. With Schmidt orthogonal, we have Sdandard orthogonal basis $\xi_1$ to $\xi_n$. They make a unit orthogonal matrix $U_1$. $U_1^TAU_1=X$;X is a quasi upper triangular matrix.Then we have proved it with assumption.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
