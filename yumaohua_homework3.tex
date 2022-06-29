@@ -1,0 +1,77 @@
+\documentclass{ctexart}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title{作业三：规划我的Linux工作环境}
+
+\author{俞茂桦\\信息与计算科学\\3210104374}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{我的Linux发行版名称以及版本号}
+	
+	我的Linux版本信息如下：
+	\begin{verbatim}
+		LSB Version:	core-9.20170808ubuntu1-noarch:security-9.20170808ubuntu1-noarch
+		Distributor ID:	Ubuntu
+		Description:	Ubuntu 18.04.6 LTS
+		Release:	18.04
+		Codename:	bionic
+		
+	\end{verbatim}
+	\section{我的调整、软件安装与额外配置}
+	为了适应专业学习的需要，我对我的系统做了一些调整，安装了需要的软件，并做了一些额外配置。
+	\subsection{我对系统的主要调整}
+	\begin{flushleft}
+	1.在\verb|Software & Updates|中更改下载源为\verb|https://mirrors.cn99.com/ubuntu|,加快我的下载速度。\\
+	2.在\verb|Language Support|中将\verb|Keyboard input method system|改为\verb|fcitx|，配合\verb|google pinyin|进行中文输入。\\
+	3.安装了增强功能。\\
+	4.设置了虚拟机的输入法，显存，共享文件夹等。
+	\end{flushleft}
+	\subsection{我安装的包}
+	\begin{flushleft}
+		1.synaptic package manager:为一个包管理器，可以帮助我下载软件\\
+		2.make \verb|&| cmake \verb|&| automake:帮助项目完成编译\\
+		3.emacs \verb|&| emacs-goodies-el:著名的集成开发环境和文本编辑器\\
+		4.texlive-full:写相关报告使用，适应数学报告及论文的需求\\
+		5.doxygen \verb|&| doxygen-doc:将程序中的特定注释转换为说明文件\\
+		6.libboost-all-dev：数值计算相关的C++代码\\
+		7.trilinos-all-dev \verb|&| doc \verb|&| dbg：并行计算相关\\
+		8.dx：后处理相关画画软件\\
+		9.ssh：字符界面远程登录相关\\
+		10.vnc4server \verb|&| x11vnc：图形界面远程登录相关\\
+		11.git：源代码管理器\\
+		12.texstudio：编译tex文本环境\\
+	\end{flushleft}
+	\subsection{额外的配置工作}
+	\begin{flushleft}
+		1.将emacs可输入中文并打开emacs指令简化为emacs\\
+		2.配置了emacs环境\\
+		3.更改了texstudio默认编译器，使其可编译中文\\
+	\end{flushleft}
+	\section{我下一步的工作}
+	\subsection{对未来使用Linux环境的场合的预计}
+	\begin{flushleft}
+		1.专业课程如“数据结构与算法”等课程上学习报告的书写将在Linux环境下使用\LaTeX{}文本，相关程序将会在Linux环境下编写和运行\\
+		2.专业方向诸如数值计算、并行计算以及其它内容将在Linux环境下进行，因为在Linux环境下可以获得开源的合适的算法\\
+		3.毕业论文的完成\\
+		4.据分析，信息与计算科学专业在工程领域可以完成数学计算、科学计算的工作，在体育领域可以完成临场数据统计与处理等工作，在金融领域可以完成证劵模型计算等工作，不论在什么领域面对的都是计算与软件开发相关内容，因此需要Linux这样开源且高效的工作环境\cite{高泽健2020浅析信息与计算科学在几个领域中的应用}\\
+	\end{flushleft}
+	\subsection{对目前工作环境的评估}
+	几经波折，\LaTeX{}的编写环境已经非常使我满意，但是在emacs中我目前只配置了输入中文和语法高亮，还没有办法自动补齐，对于未来编写代码有些不方便。为防止现有系统被破坏，我正尝试在另一台虚拟机中将emacs配置齐全。
+	\section{我如何保证工作系统中代码、文献和工作结果的安全}
+	\begin{flushleft}
+		1.将二进制文件和文档分开\\
+		2.及时将自己的文档上传至github\\
+		3.将pdf等二进制文件上传至坚果云进行保存\\
+		4.在Linux恶意软件增加的环境下，对软件安装保持谨慎\cite{崔丹1}\\
+		
+	\end{flushleft}
+	
+\bibliographystyle{unsrt}
+\bibliography{learn}
+
+\end{document}
